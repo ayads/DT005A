@@ -45,7 +45,7 @@ device.on('connect', function() {
     infiniteLoopPublish();
 });
 
-// Publish to AWS IoT every 5 seconds.
+// Publish to AWS IoT every 1 minute.
 const infiniteLoopPublish = async () => {
   console.log("Sending data to IoT Cloud!");
   const message = await getSensorData();
